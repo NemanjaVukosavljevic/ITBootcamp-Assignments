@@ -5,7 +5,7 @@ let putnikDinari = 2500;
 let cenaAutobuskeKarte = putnikDinari / 5;
 let cenaSmestaja = putnikDinari / 3;
 
-let krajnjaSuma = Math.floor(putnikDinari - cenaAutobuskeKarte - cenaSmestaja);
+let krajnjaSuma = putnikDinari - cenaAutobuskeKarte - cenaSmestaja;
 
 console.log(krajnjaSuma);
 
