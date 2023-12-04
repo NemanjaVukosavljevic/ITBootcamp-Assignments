@@ -16,7 +16,7 @@ console.log(krajnjaSuma);
 
 let ukupnoPoglavlja = 10;
 let poglavljaPrviDan = 2;
-let poglavljaDrugiDan = 4;
+let poglavljaDrugiDan = poglavljaPrviDan + 2;
 
 let preostaloPoglavlja = ukupnoPoglavlja - poglavljaPrviDan - poglavljaDrugiDan;
 
