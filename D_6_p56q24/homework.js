@@ -31,8 +31,9 @@ let peraDatiNovac = 2000;
 let mikaDatiNovac = 3000;
 let kusur = 1000;
 
-let peraKusur = kusur / 3; // 1 trecina kusura jer je dato manje novca u startu
-let mikaKusur = (kusur / 3) * 2;  // predstavlja 2/3 kusura
+let ukupnoNaGomili = peraDatiNovac + mikaDatiNovac;
+let peraKusur = (peraDatiNovac / ukupnoNaGomili) * kusur;
+let mikaKusur = (mikaDatiNovac / ukupnoNaGomili) * kusur;
 
 console.log(peraKusur);
 console.log(mikaKusur);
