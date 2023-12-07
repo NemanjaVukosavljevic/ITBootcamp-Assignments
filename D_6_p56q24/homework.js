@@ -27,15 +27,17 @@ console.log(preostaloPoglavlja);
 // Na osnosvu unetih vrednosti, u konzoli ispisati koliki kusur treba da dobije Pera, a koliki kusur treba da dobije Mika, da bi jednako platili svako svoj džemper.
 // Pretpostaviti da ni Pera ni Mika nisu dali manje novca nego što je cena džempera koji treba da plate. 
 
-let peraDatiNovac = 2000;
-let mikaDatiNovac = 3000;
-let kusur = 1000;
 
-let ukupnoNaGomili = peraDatiNovac + mikaDatiNovac;
-let peraKusur = (peraDatiNovac / ukupnoNaGomili) * kusur;
-let mikaKusur = (mikaDatiNovac / ukupnoNaGomili) * kusur;
+let peraDatiNovac = 2500; 
+let mikaDatiNovac = 2500; 
+let kusur = 1000; 
 
-console.log(peraKusur);
-console.log(mikaKusur);
+let cenaJednogDzempera = (peraDatiNovac + mikaDatiNovac - kusur) / 2;
+
+
+let peraKusur = peraDatiNovac - cenaJednogDzempera;
+let mikaKusur = mikaDatiNovac - cenaJednogDzempera;
+
+console.log(`Cena dzempera: ${cenaJednogDzempera} ------------------- Perin kusur: ${peraKusur} -------------------- Mikin kusur: ${mikaKusur} --------------------`);
 
 
