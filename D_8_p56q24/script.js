@@ -43,18 +43,23 @@ for (let i = 1; i <= 10; i++){
 // U realizaciji ovog zadatka koristiti for petlju. 
 
 
+
 let brojacSpanova = 1;
 
-for (let i = 1; i <= 64; i++){
-    if (i % 2 != 0){
-        document.write(`<span style="padding: 10px 20px; display: inline-block; margin: 0 0 5px 0;">${brojacSpanova}</span>`);
-        brojacSpanova++;
-    } else if (i % 2 == 0){
-        document.write(`<span style="background-color: black; color: white; padding: 10px 20px; display: inline-block; margin: 0 0 5px 0;">${brojacSpanova}</span>`);
-        brojacSpanova++;
-        if(i % 8 == 0){
-            document.write(`</br>`);
+for (let red = 1; red <= 8; red++) {
+    for (let kolona = 1; kolona <= 8; kolona++) {
+        if ((red + kolona) % 2 === 0) {
+            document.write(`<span style="padding: 10px 20px; display: inline-block; margin: 0 0 5px 0;">${brojacSpanova}</span>`);
+        } else {
+            document.write(`<span style="background-color: black; color: white; padding: 10px 20px; display: inline-block; margin: 0 0 5px 0;">${brojacSpanova}</span>`);
         }
+
+        brojacSpanova++;
     }
+
+    if (red < 8) {
+        document.write(`</br>`);
+    }
+    
 }
 
