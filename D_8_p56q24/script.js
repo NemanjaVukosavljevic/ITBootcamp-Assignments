@@ -48,11 +48,18 @@ for (let i = 1; i <= 10; i++){
 let brojacSpanova = 1;
 
 for (let red = 1; red <= 8; red++) {
+    let spanStyle = `
+            padding: 10px 20px;
+            display: inline-block;
+            margin: 0 0 5px 0;
+            width: 25px; 
+            text-align: center;
+        `;
     for (let kolona = 1; kolona <= 8; kolona++) {
         if ((red + kolona) % 2 === 0) {
-            document.write(`<span style="padding: 10px 20px; display: inline-block; margin: 0 0 5px 0;">${brojacSpanova}</span>`);
+            document.write(`<span style="${spanStyle}">${brojacSpanova}</span>`);
         } else {
-            document.write(`<span style="background-color: black; color: white; padding: 10px 20px; display: inline-block; margin: 0 0 5px 0;">${brojacSpanova}</span>`);
+            document.write(`<span style="${spanStyle} background-color: black; color: white;">${brojacSpanova}</span>`);
         }
 
         brojacSpanova++;
@@ -63,4 +70,5 @@ for (let red = 1; red <= 8; red++) {
     }
     
 }
+
 
