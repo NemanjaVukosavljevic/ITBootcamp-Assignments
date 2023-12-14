@@ -22,6 +22,7 @@ for (let i = 1; i <= 10; i++){
         brojacJedan++;
 
         let nestedList = document.createElement(`ul`);
+        nestedList.style.color = `purple`;
         let nestedListItem = document.createElement(`li`);
         nestedListItem.innerText = `Element ${brojacJedan}`;
         brojacJedan++;
