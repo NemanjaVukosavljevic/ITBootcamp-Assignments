@@ -3,7 +3,7 @@
 
 let shoppingItems = [`Air Jordan 4 "Fear Pack"`, `Air Jordan 4 "Fire Red"`, `Air Jordan 4 "Military Blue"`];
 
-const pravljenjeListeFunction = () => {
+const createListFunction = () => {
     let createdList = document.createElement(`ul`);
     
     for (let shoppingItem of shoppingItems){
@@ -15,7 +15,7 @@ const pravljenjeListeFunction = () => {
     document.body.appendChild(createdList);
 }
 
-pravljenjeListeFunction();
+createListFunction();
 
 
 // 2. Zadatak
