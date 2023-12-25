@@ -22,7 +22,7 @@ const najblizaProseku = (array) => {
 
     temperature.forEach(element => {
         if (Math.abs(element - prosek) < razlika){
-            razlika = (element - prosek);
+            razlika = Math.abs(element - prosek);
             temp = element;
         }
     });
