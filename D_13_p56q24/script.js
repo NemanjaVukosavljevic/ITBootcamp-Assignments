@@ -42,7 +42,7 @@ const pageCreationFunction = (array) => {
     headerRow.appendChild(tableHeaderTwo);
     createdTable.appendChild(headerRow);
     
-    array.forEach(element => {
+    array.forEach((element, index) => {
         let row = document.createElement(`tr`);
         let colOne = document.createElement(`td`);
         let colTwo = document.createElement(`td`);
@@ -59,9 +59,13 @@ const pageCreationFunction = (array) => {
 
         if (element.user_has_read == true){
             row.style.color = `blue`;
-            row.style.backgroundColor = `green`;
         } else {
             row.style.color = `gray`;
+        }
+
+        if (index % 2 != 0){
+            row.style.backgroundColor = `green`;
+        } else {
             row.style.backgroundColor = `yellow`;
         }
         
