@@ -38,7 +38,6 @@ productContainer.addEventListener('click', (event) => {
     const product = event.target.closest('.product');
     const increment = event.target.closest(`.increment`);
     const decrement = event.target.closest(`.decrement`);
-    const cost = event.target.closest(`.cost`);
     const index = Array.from(productContainer.children).indexOf(product);
 
     if (increment && product){
@@ -47,7 +46,6 @@ productContainer.addEventListener('click', (event) => {
         fieldValue++;
 
         let costField = product.querySelector(`.cost`);
-        let costValue = costField.innerText;
         
         // inkrement cene
         
@@ -67,7 +65,6 @@ productContainer.addEventListener('click', (event) => {
         fieldValue--;
 
         let costField = product.querySelector(`.cost`);
-        let costValue = costField.innerText;
 
         if (fieldValue < 1){
             fieldValue = 1;
