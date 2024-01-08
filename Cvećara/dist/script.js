@@ -164,7 +164,7 @@ function handleProductSelection(productName) {
     
     const productNameLabel = document.createElement('label');
     productNameLabel.textContent = productName.charAt(0).toUpperCase() + productName.slice(1); 
-    console.log(productName);
+
     const productCost = document.createElement('span');
     productCost.textContent = '500 din'; 
 
