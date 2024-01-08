@@ -213,6 +213,8 @@ realOrderButton.addEventListener('click', () => {
             discountOption.innerHTML = `10% discount! Old price ${total}`;
             totalPriceModal.innerHTML = `${discountedPrice} din`
         }
+    } else {
+        discountOption.innerHTML = `No discount`
     }
     
 
@@ -231,6 +233,7 @@ closeModalButton.addEventListener(`click`, () => {
     chocolateBoxRadioButton.checked = false;
     chocolateRadioButton.checked = false;
     champagneRadioButton.checked = false;
+    
 
     allAddToCartButtons.forEach(element => {
         element.closest(`.addToCart`).className = `addToCart bg-red-500 w-[65%] text-sm lg:text-base text-white my-2 rounded-lg`;
