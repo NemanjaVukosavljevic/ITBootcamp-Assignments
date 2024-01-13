@@ -58,15 +58,15 @@ class Knjiga {
     };
 
     obimna(){
-        return (this.brojStrana > 600) ? true : false;
+        return (this.brojStrana > 600);
     };
 
     skupa(){
-        return (this.cena > 8000) ? true : false;
+        return (this.cena > 8000);
     };
 
     dugackoIme(){
-        return (this.autor.length > 18) ? true : false;
+        return (this.autor.length > 18);
     }
     
 };

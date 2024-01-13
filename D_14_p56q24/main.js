@@ -7,7 +7,6 @@ let knjiga3 = new Knjiga(`Esmeralda 973`, `Aleksandar Bilanovic`, 2017, 150, 190
 let nizKnjiga = [knjiga1, knjiga2, knjiga3];
 
 
-console.log(`-----------------`);
 
 nizKnjiga.forEach(element => {
     if (element.dugackoIme()){
@@ -20,7 +19,6 @@ nizKnjiga.forEach(element => {
 });
 
 
-console.log(`-----------------`);
 
 const ukupnaCena = (array) => {
     let ukupno = 0;
