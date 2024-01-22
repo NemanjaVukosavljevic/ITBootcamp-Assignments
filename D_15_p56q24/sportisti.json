@@ -1,0 +1,22 @@
+[
+    {
+        "imePrezime" : "Nikola Jokic",
+        "visina" : 211,
+        "timovi" : ["Denver Nuggets", "Meka Leks"]
+    },
+    {
+        "imePrezime" : "LeBron James",
+        "visina" : 206,
+        "timovi" : ["Cleveland Cavaliers", "Miami Heat", "Los Angeles Lakers", "St. Vincent St. Mary"]
+    },
+    {
+        "imePrezime" : "Russell Westbrook",
+        "visina" : 193,
+        "timovi" : ["Houston Rockets", "Los Angeles Clippers", "Los Angeles Lakers", "Washington Wizards"]
+    },
+    {
+        "imePrezime" : "Luka Doncic",
+        "visina" : 201,
+        "timovi" : ["Dallas Maverics"]
+    }
+]
