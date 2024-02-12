@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Project</title>
+    <link href="../dist/output.css" rel="stylesheet">
+</head>
+<body>
+    <header class="h-[15vh] flex flex-col justify-center items-center">
+        <h1 class="text-purple-500 text-3xl mb-3 font-bold">
+            ITBootcamp Chat
+        </h1>
+
+        <h2 class="text-purple-500 text-xl">
+            Choose a chatroom
+        </h1>
+    </header>
+
+    <div class="main-div h-[80vh]">
+
+        <div class="flex flex-row">
+            <div id="generalButton" class="roomNames flex justify-center items-center w-[25%] p-3 rounded-md bg-purple-600 border border-white text-white cursor-pointer hover:bg-purple-700 transition-colors duration-300">
+                <p>
+                    #general
+                </p>
+            </div>
+            <div id="jsButton" class="roomNames flex justify-center items-center w-[25%] p-3 rounded-md bg-purple-600 border border-white text-white cursor-pointer hover:bg-purple-700 transition-colors duration-300">
+                <p>
+                    #js
+                </p>
+            </div>
+            <div id="homeworksButton" class="roomNames flex justify-center items-center w-[25%] p-3 rounded-md bg-purple-600 border border-white text-white cursor-pointer hover:bg-purple-700 transition-colors duration-300">
+                <p>
+                    #homeworks
+                </p>
+            </div>
+            <div id="testsButton" class="roomNames flex justify-center items-center w-[25%] p-3 rounded-md bg-purple-600 border border-white text-white cursor-pointer hover:bg-purple-700 transition-colors duration-300">
+                <p>
+                    #tests
+                </p>
+            </div>
+        </div>
+
+
+        <div>
+            <ul id="messagesDisplayList" class="flex flex-col justify-start items-start min-h-[35rem] max-h-[35rem] overflow-y-auto pl-5">
+
+            </ul>
+        </div>
+    
+        <div class="w-full flex flex-col justify-center items-center">
+            <div class="flex flex-row justify-center items-center">
+                <input type="color" id="colorPicker" value="#ffffff">
+                <button id="updateColorButton">Update color</button>
+            </div>
+            <form action="" class="w-full mb-3 flex justify-center items-center">
+                <textarea id="messageField" class="border mr-3 rounded-md border-black w-[40%] overflow-y-auto h-[3.7rem] max-h-[3.7rem] pl-3" placeholder="Type in your message..."></textarea>
+                <button id="sendMessageButton" class="bg-purple-500 p-5 rounded-md w-[30%] hover:bg-purple-700 transition-colors duration-300" type="submit">Send</button>
+            </form>
+            <form action="" class="w-full flex justify-center items-center">
+                <input id="updateField" type="text" class="border mr-3 rounded-md border-black w-[40%] h-[3.85rem] pl-3" placeholder="Update your username...">
+                <button id="updateButton" class="bg-purple-500 p-5 rounded-md w-[30%] hover:bg-purple-700 transition-colors duration-300" type="submit">Update</button>
+            </form>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-firestore.js"></script>
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyAKPnwR8GAMBGaBMaHpFvg0zPH7ZugxiLk",
+            authDomain: "itb-js10-ed577.firebaseapp.com",
+            projectId: "itb-js10-ed577",
+            storageBucket: "itb-js10-ed577.appspot.com",
+            messagingSenderId: "893036563852",
+            appId: "1:893036563852:web:364ce60e3e0df5d3b89aa9"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        let db = firebase.firestore();
+    </script>
+
+    <!-- <script src="script.js"></script> -->
+    <script type="module" src="app.js"></script>
+</body>
+</html>
